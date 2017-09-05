@@ -1,0 +1,56 @@
+INFO: 
+INFO: -------------START----------------------
+INFO: ----------------------------------------
+INFO: Check for directory <<bsb808>>
+INFO: Does repo exists at /home/bsb/rossc/assignments/bsb808/rossc_a1? True
+INFO: Contents of repository:
+INFO: Calling <tree /home/bsb/rossc/assignments/bsb808/rossc_a1>
+INFO: stdout: /home/bsb/rossc/assignments/bsb808/rossc_a1
+├── playpen
+│   ├── folder1
+│   │   └── file1.txt
+│   ├── folder2
+│   │   └── file2.txt
+│   └── play.txt
+├── README.md
+└── sandbox
+    ├── commands.txt
+    ├── dir1
+    │   └── file1.txt
+    └── dir2
+        └── file2.txt
+
+6 directories, 7 files
+
+INFO: 
+INFO: Exercise 2: Check existence of directories and files
+INFO: Checking existence of files/directories...
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/dir1 exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/dir1/file1.txt exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/dir2 exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/dir2/file2.txt exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/commands.txt exist? True
+INFO: Success: All 6 of 6 files/directories exist
+INFO: Contents of </home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/commands.txt>
+INFO: Calling <cat /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/commands.txt>
+INFO: stdout: 
+INFO: 
+INFO: Exercise 3: Check existence of more directories and files
+INFO: Checking existence of files/directories...
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/folder1 exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/folder1/file1.txt exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/folder2 exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/folder2/file2.txt exist? True
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/play.txt exist? True
+INFO: Success: All 6 of 6 files/directories exist
+INFO: 
+INFO: Exercise 4: Check existence of tree.out
+INFO: Checking existence of files/directories...
+INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/tree.out exist? False
+WARNING: Only 0 of 1 files/directories exist
+INFO: Contents of </home/bsb/rossc/assignments/bsb808/rossc_a1/tree.out>
+ERROR: File does not exist!
+INFO: ****************END*********************
+INFO: End of testing for <a1>
