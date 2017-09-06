@@ -13,14 +13,16 @@ INFO: stdout: ./assign_workingcopies/radcaf/rossc_a1
 │   │   └── file2.txt
 │   └── play.txt
 ├── README.md
-└── sandbox
-    ├── commands.txt
-    ├── dir1
-    │   └── file1.txt
-    └── dir2
-        └── file2.txt
+├── sandbox
+│   ├── commands.txt
+│   ├── dir1
+│   │   └── file1.txt
+│   └── dir2
+│       └── file2.txt
+└── scripts
+    └── turtleletter.sh
 
-6 directories, 7 files
+7 directories, 8 files
 
 INFO: 
 INFO: Assignment: Introduction to Linux and Git
@@ -55,14 +57,20 @@ INFO: Success: All 6 of 6 files/directories exist
 INFO: 
 INFO: Assignment: Piloting a Turtle
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/radcaf/rossc_a1/scripts/turtleletter.sh exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/radcaf/rossc_a1/scripts/turtleletter.sh exist? True
+INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/radcaf/rossc_a1/scripts/turtleletter.sh>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/radcaf/rossc_a1/scripts/turtleletter.sh>
+INFO: stdout: rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[1.0, 0.0, 1.0]' '[0.0, 0.0, 2.0]'
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[-1.0, -2.5, 0.0]' '[0.0, 0.0, 0.0]'
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[-1.0, 2.5, 0.0]' '[0.0, 0.0, 2.0]'
+
+INFO: Attempting to run bash script <scripts/turtleletter.sh>
+INFO: Saving resulting image as </home/bsb/rossc/rossc_assign_eval/a1/turtleletter_radcaf.png>
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 13
-	 Successes: 12
-	 Failures: 1
+INFO: Number of tests executed: 13
+	 Successes: 13
+	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a1>
