@@ -2,7 +2,7 @@ INFO:
 INFO: -------------START----------------------
 INFO: ----------------------------------------
 INFO: Check for directory <<mtall>>
-INFO: Does repo exists at /home/bsb/rossc/assignments/mtall/rossc_a1? False
+INFO: Does repo exists at ./assign_workingcopies/mtall/rossc_a1? False
 INFO: Terminating testing - can't test without the repository
 INFO: 
 INFO: -- SUMMARY --

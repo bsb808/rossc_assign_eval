@@ -2,10 +2,10 @@ INFO:
 INFO: -------------START----------------------
 INFO: ----------------------------------------
 INFO: Check for directory <<bsb808>>
-INFO: Does repo exists at /home/bsb/rossc/assignments/bsb808/rossc_a1? True
+INFO: Does repo exists at ./assign_workingcopies/bsb808/rossc_a1? True
 INFO: Contents of repository:
-INFO: Calling <tree /home/bsb/rossc/assignments/bsb808/rossc_a1>
-INFO: stdout: /home/bsb/rossc/assignments/bsb808/rossc_a1
+INFO: Calling <tree ./assign_workingcopies/bsb808/rossc_a1>
+INFO: stdout: ./assign_workingcopies/bsb808/rossc_a1
 ├── playpen
 │   ├── folder1
 │   │   └── file1.txt
@@ -20,40 +20,39 @@ INFO: stdout: /home/bsb/rossc/assignments/bsb808/rossc_a1
 │   └── dir2
 │       └── file2.txt
 └── scripts
-    ├── turtleletter.png
     └── turtleletter.sh
 
-7 directories, 9 files
+7 directories, 8 files
 
 INFO: 
 INFO: Assignment: Introduction to Linux and Git
 INFO: Checking existence of files/directories...
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/dir1 exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/dir1/file1.txt exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/dir2 exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/dir2/file2.txt exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/commands.txt exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/sandbox exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/sandbox/dir1 exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/sandbox/dir1/file1.txt exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/sandbox/dir2 exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/sandbox/dir2/file2.txt exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/sandbox/commands.txt exist? True
 INFO: Success: All 6 of 6 files/directories exist
-INFO: Contents of </home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/commands.txt>
-INFO: Calling <cat /home/bsb/rossc/assignments/bsb808/rossc_a1/sandbox/commands.txt>
+INFO: Contents of <./assign_workingcopies/bsb808/rossc_a1/sandbox/commands.txt>
+INFO: Calling <cat ./assign_workingcopies/bsb808/rossc_a1/sandbox/commands.txt>
 INFO: stdout: 
 INFO: 
 INFO: Checking existence of files/directories...
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/folder1 exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/folder1/file1.txt exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/folder2 exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/folder2/file2.txt exist? True
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/playpen/play.txt exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/playpen exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/playpen/folder1 exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/playpen/folder1/file1.txt exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/playpen/folder2 exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/playpen/folder2/file2.txt exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/playpen/play.txt exist? True
 INFO: Success: All 6 of 6 files/directories exist
 INFO: 
 INFO: Assignment: Piloting a Turtle
 INFO: Checking existence of files/directories...
-INFO: Does /home/bsb/rossc/assignments/bsb808/rossc_a1/scripts/turtleletter.sh exist? True
+INFO: Does ./assign_workingcopies/bsb808/rossc_a1/scripts/turtleletter.sh exist? True
 INFO: Success: All 1 of 1 files/directories exist
-INFO: Contents of </home/bsb/rossc/assignments/bsb808/rossc_a1/scripts/turtleletter.sh>
-INFO: Calling <cat /home/bsb/rossc/assignments/bsb808/rossc_a1/scripts/turtleletter.sh>
+INFO: Contents of <./assign_workingcopies/bsb808/rossc_a1/scripts/turtleletter.sh>
+INFO: Calling <cat ./assign_workingcopies/bsb808/rossc_a1/scripts/turtleletter.sh>
 INFO: stdout: rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[4.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
 rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[5.0, 0.0, 0.0]' '[0.0, 0.0, -4.5]'
 INFO: Attempting to run bash script <scripts/turtleletter.sh>
