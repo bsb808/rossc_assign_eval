@@ -6,6 +6,8 @@ INFO: Does repo exists at ./assign_workingcopies/pforerogit/rossc_a1? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/pforerogit/rossc_a1>
 INFO: stdout: ./assign_workingcopies/pforerogit/rossc_a1
+├── nodes
+│   └── turtleletter.py
 ├── playpen
 │   ├── folder1
 │   │   └── file1.txt
@@ -22,7 +24,7 @@ INFO: stdout: ./assign_workingcopies/pforerogit/rossc_a1
 └── scripts
     └── turtleletter.sh
 
-7 directories, 8 files
+8 directories, 9 files
 
 INFO: 
 INFO: Assignment: Introduction to Linux and Git
@@ -71,8 +73,6 @@ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[4.5, 0.0, 0.0]' '[0.0,
 rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0, 0, 0]' '[0, 0, -1.5]'
 rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[4.0, 0.0, 0.0]' '[0.0, 0.0, -3.12]'
 
-INFO: Attempting to run bash script <scripts/turtleletter.sh>
-INFO: Saving resulting image as </home/bsb/rossc/rossc_assign_eval/a1/turtleletter_pforerogit.png>
 INFO: 
 INFO: -- SUMMARY --
 INFO: Number of tests executed: 13

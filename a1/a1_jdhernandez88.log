@@ -71,8 +71,6 @@ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[ 0.1, 0.0, 0.0]' '[0.0
 rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[ 2.0, 0.0, 0.0]' '[0.0, 0.0,  0.0]' #Move up +2 units
 rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[ 3.0, 0.0, 0.0]' '[0.0, 0.0, -3.5]' #Generate curve
 
-INFO: Attempting to run bash script <scripts/turtleletter.sh>
-INFO: Saving resulting image as </home/bsb/rossc/rossc_assign_eval/a1/turtleletter_jdhernandez88.png>
 INFO: 
 INFO: -- SUMMARY --
 INFO: Number of tests executed: 13
