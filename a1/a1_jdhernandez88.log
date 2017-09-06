@@ -6,30 +6,49 @@ INFO: Does repo exists at ./assign_workingcopies/jdhernandez88/rossc_a1? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/jdhernandez88/rossc_a1>
 INFO: stdout: ./assign_workingcopies/jdhernandez88/rossc_a1
+├── playpen
+│   ├── folder1
+│   │   └── file1.txt
+│   ├── folder2
+│   │   └── file2.txt
+│   ├── play.txt
+│   └── play.txt~
+├── README.md
+└── sandbox
+    ├── commands.txt
+    ├── commands.txt~
+    ├── dir1
+    │   └── file1.txt
+    └── dir2
+        └── file2.txt
 
-0 directories, 0 files
+6 directories, 9 files
 
 INFO: 
 INFO: Assignment: Introduction to Linux and Git
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/dir1 exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/dir1/file1.txt exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/dir2 exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/dir2/file2.txt exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/commands.txt exist? False
-WARNING: Only 0 of 6 files/directories exist
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/dir1 exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/dir1/file1.txt exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/dir2 exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/dir2/file2.txt exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/commands.txt exist? True
+INFO: Success: All 6 of 6 files/directories exist
 INFO: Contents of <./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/commands.txt>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/jdhernandez88/rossc_a1/sandbox/commands.txt>
+INFO: stdout: commands
+
+cp -r /path/to/directory /path/to/location/new-name
+
 INFO: 
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/folder1 exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/folder1/file1.txt exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/folder2 exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/folder2/file2.txt exist? False
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/play.txt exist? False
-WARNING: Only 0 of 6 files/directories exist
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/folder1 exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/folder1/file1.txt exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/folder2 exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/folder2/file2.txt exist? True
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a1/playpen/play.txt exist? True
+INFO: Success: All 6 of 6 files/directories exist
 INFO: 
 INFO: Assignment: Piloting a Turtle
 INFO: Checking existence of files/directories...
@@ -40,7 +59,7 @@ ERROR: File does not exist!
 INFO: 
 INFO: -- SUMMARY --
 WARNING: Number of tests executed: 13
-	 Successes: 0
-	 Failures: 13
+	 Successes: 12
+	 Failures: 1
 INFO: ****************END*********************
 INFO: End of testing for <a1>
