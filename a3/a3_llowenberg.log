@@ -1,0 +1,13 @@
+INFO: 
+INFO: -------------START----------------------
+INFO: ----------------------------------------
+INFO: Check for directory <<llowenberg>>
+INFO: Does repo exists at ./assign_workingcopies/llowenberg/rossc_a3? False
+INFO: Terminating testing - can't test without the repository
+INFO: 
+INFO: -- SUMMARY --
+WARNING: Number of tests executed: 1
+	 Successes: 0
+	 Failures: 1
+INFO: ****************END*********************
+INFO: End of testing for <a3>
