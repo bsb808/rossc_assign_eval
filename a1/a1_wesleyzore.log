@@ -2,12 +2,46 @@ INFO:
 INFO: -------------START----------------------
 INFO: ----------------------------------------
 INFO: Check for directory <<wesleyzore>>
-INFO: Does repo exists at ./assign_workingcopies/wesleyzore/rossc_a1? False
-INFO: Terminating testing - can't test without the repository
+INFO: Does repo exists at ./assign_workingcopies/wesleyzore/rossc_a1? True
+INFO: Contents of repository:
+INFO: Calling <tree ./assign_workingcopies/wesleyzore/rossc_a1>
+INFO: stdout: ./assign_workingcopies/wesleyzore/rossc_a1
+└── README.md
+
+0 directories, 1 file
+
+INFO: 
+INFO: Assignment: Introduction to Linux and Git
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/sandbox exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/sandbox/dir1 exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/sandbox/dir1/file1.txt exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/sandbox/dir2 exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/sandbox/dir2/file2.txt exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/sandbox/commands.txt exist? False
+WARNING: Only 0 of 6 files/directories exist
+INFO: Contents of <./assign_workingcopies/wesleyzore/rossc_a1/sandbox/commands.txt>
+ERROR: File does not exist!
+INFO: 
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/playpen exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/playpen/folder1 exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/playpen/folder1/file1.txt exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/playpen/folder2 exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/playpen/folder2/file2.txt exist? False
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/playpen/play.txt exist? False
+WARNING: Only 0 of 6 files/directories exist
+INFO: 
+INFO: Assignment: Piloting a Turtle
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a1/scripts/turtleletter.sh exist? False
+WARNING: Only 0 of 1 files/directories exist
+INFO: Contents of <./assign_workingcopies/wesleyzore/rossc_a1/scripts/turtleletter.sh>
+ERROR: File does not exist!
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 1
+WARNING: Number of tests executed: 13
 	 Successes: 0
-	 Failures: 1
+	 Failures: 13
 INFO: ****************END*********************
 INFO: End of testing for <a1>
