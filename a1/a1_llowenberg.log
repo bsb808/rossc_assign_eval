@@ -7,20 +7,25 @@ INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/llowenberg/rossc_a1>
 INFO: stdout: ./assign_workingcopies/llowenberg/rossc_a1
 ├── playpen
-│   ├── commands.txt
 │   ├── folder1
 │   │   └── file1.txt
-│   └── folder2
-│       └── file2.txt
+│   ├── folder2
+│   │   └── file2.txt
+│   ├── play.txt
+│   └── play.txt~
 ├── README.md
-└── sandbox
-    ├── commands.txt
-    ├── dir1
-    │   └── file1.txt
-    └── dir2
-        └── file2.txt
+├── sandbox
+│   ├── commands.txt
+│   ├── commands.txt~
+│   ├── dir1
+│   │   └── file1.txt
+│   └── dir2
+│       └── file2.txt
+└── scripts
+    ├── turtleletter.sh
+    └── turtleletter.sh~
 
-6 directories, 7 files
+7 directories, 11 files
 
 INFO: 
 INFO: Assignment: Introduction to Linux and Git
@@ -34,7 +39,19 @@ INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/sandbox/commands.txt exist
 INFO: Success: All 6 of 6 files/directories exist
 INFO: Contents of <./assign_workingcopies/llowenberg/rossc_a1/sandbox/commands.txt>
 INFO: Calling <cat ./assign_workingcopies/llowenberg/rossc_a1/sandbox/commands.txt>
-INFO: stdout: 
+INFO: stdout: mkdir sandbox
+cd sandbox
+mkdir dir1
+touch file1.txt
+cd ..
+cd ..
+mkdir dir2
+touch file2.txt
+cd ..
+cd ..
+touch commands.txt
+gedit commands.txt
+
 INFO: 
 INFO: Checking existence of files/directories...
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/playpen exist? True
@@ -42,19 +59,27 @@ INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/playpen/folder1 exist? Tru
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/playpen/folder1/file1.txt exist? True
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/playpen/folder2 exist? True
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/playpen/folder2/file2.txt exist? True
-INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/playpen/play.txt exist? False
-WARNING: Only 5 of 6 files/directories exist
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/playpen/play.txt exist? True
+INFO: Success: All 6 of 6 files/directories exist
 INFO: 
 INFO: Assignment: Piloting a Turtle
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/scripts/turtleletter.sh exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a1/scripts/turtleletter.sh exist? True
+INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/llowenberg/rossc_a1/scripts/turtleletter.sh>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/llowenberg/rossc_a1/scripts/turtleletter.sh>
+INFO: stdout: rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[3.5, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[5.0, 0.0, 0.0]' '[0.0, 0.0, 4.0]'
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[8.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[5.0, 0.0, 0.0]' '[0.0, 0.0, -4.0]'
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[7.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+
+INFO: Attempting to run bash script <scripts/turtleletter.sh>
+INFO: Saving resulting image as </home/bsb/rossc/rossc_assign_eval/a1/turtleletter_llowenberg.png>
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 13
-	 Successes: 11
-	 Failures: 2
+INFO: Number of tests executed: 13
+	 Successes: 13
+	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a1>
