@@ -40,14 +40,3 @@ INFO: stdout: Converting ./assign_workingcopies/bsb808/rossc_a3/images/position.
 
 INFO: Does ./assign_workingcopies/bsb808/rossc_a3/images/quaternion.png exist? True
 INFO: CMD: bash add_caption.sh ./assign_workingcopies/bsb808/rossc_a3/images/quaternion.png ./tmp/quaternion_rare.png "images/quaternion.png"
-INFO: stdout: Converting ./assign_workingcopies/bsb808/rossc_a3/images/quaternion.png to ./tmp/quaternion_rare.png with caption <images/quaternion.png>
-
-INFO: CMD: convert ./tmp/cmd_drive_rare.png ./tmp/euler_rare.png ./tmp/position_rare.png ./tmp/quaternion_rare.png  /home/bsb/rossc/rossc_assign_eval/a3/a3_bsb808_images.pdf
-INFO: stdout: 
-INFO: 
-INFO: -- SUMMARY --
-INFO: Number of tests executed: 5
-	 Successes: 5
-	 Failures: 0
-INFO: ****************END*********************
-INFO: End of testing for <a3>
