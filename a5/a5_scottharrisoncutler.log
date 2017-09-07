@@ -2,12 +2,31 @@ INFO:
 INFO: -------------START----------------------
 INFO: ----------------------------------------
 INFO: Check for directory <<scottharrisoncutler>>
-INFO: Does repo exists at ./assign_workingcopies/scottharrisoncutler/rossc_a5? False
-INFO: Terminating testing - can't test without the repository
+INFO: Does repo exists at ./assign_workingcopies/scottharrisoncutler/rossc_a5? True
+INFO: Contents of repository:
+INFO: Calling <tree ./assign_workingcopies/scottharrisoncutler/rossc_a5>
+INFO: stdout: ./assign_workingcopies/scottharrisoncutler/rossc_a5
+
+0 directories, 0 files
+
+INFO: 
+INFO: Assignment: Design Project
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a5/package.xml exist? False
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a5/CMakeLists.txt exist? False
+WARNING: Only 0 of 2 files/directories exist
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a5/scripts/go.sh exist? False
+WARNING: Only 0 of 1 files/directories exist
+INFO: Contents of <./assign_workingcopies/scottharrisoncutler/rossc_a5/scripts/go.sh>
+ERROR: File does not exist!
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a5/timer.bag exist? False
+WARNING: Only 0 of 1 files/directories exist
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 1
-	 Successes: 0
-	 Failures: 1
+WARNING: Number of tests executed: 5
+	 Successes: 1
+	 Failures: 4
 INFO: ****************END*********************
 INFO: End of testing for <a5>
