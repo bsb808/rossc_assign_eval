@@ -10,9 +10,10 @@ INFO: stdout: ./assign_workingcopies/llowenberg/rossc_a4
 ├── launch
 │   └── course_control.launch
 ├── package.xml
-└── README.md
+├── README.md
+└── rosgraph.png
 
-1 directory, 4 files
+1 directory, 5 files
 
 INFO: 
 INFO: Assignment: ROS plumbing - connecting nodes via topics
@@ -24,10 +25,11 @@ INFO: Success: All 2 of 2 files/directories exist
 INFO: Exercise: Plumbing the system
 INFO: Checking existence of files/directories...
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a4/launch/course_control.launch exist? True
-INFO: Success: All 1 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a4/images/rosgraph.png exist? False
+WARNING: Only 1 of 2 files/directories exist
 INFO: Testing file <./assign_workingcopies/llowenberg/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'odometry/nav', 'nav_odom']
-INFO: Result of search - False
+INFO: Result of search - True
 INFO: Testing file <./assign_workingcopies/llowenberg/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'cmd_course', 'cmd_vel']
 INFO: Result of search - True
@@ -36,8 +38,8 @@ INFO: 	['remap', 'cmd_drive', 'cmd_drive']
 INFO: Result of search - True
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 7
-	 Successes: 6
+WARNING: Number of tests executed: 8
+	 Successes: 7
 	 Failures: 1
 INFO: ****************END*********************
 INFO: End of testing for <a4>

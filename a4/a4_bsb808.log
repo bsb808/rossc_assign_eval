@@ -26,7 +26,8 @@ INFO: Success: All 2 of 2 files/directories exist
 INFO: Exercise: Plumbing the system
 INFO: Checking existence of files/directories...
 INFO: Does ./assign_workingcopies/bsb808/rossc_a4/launch/course_control.launch exist? True
-INFO: Success: All 1 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/bsb808/rossc_a4/images/rosgraph.png exist? True
+INFO: Success: All 2 of 2 files/directories exist
 INFO: Testing file <./assign_workingcopies/bsb808/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'odometry/nav', 'nav_odom']
 INFO: Result of search - True
@@ -38,8 +39,8 @@ INFO: 	['remap', 'cmd_drive', 'cmd_drive']
 INFO: Result of search - True
 INFO: 
 INFO: -- SUMMARY --
-INFO: Number of tests executed: 7
-	 Successes: 7
+INFO: Number of tests executed: 8
+	 Successes: 8
 	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a4>
