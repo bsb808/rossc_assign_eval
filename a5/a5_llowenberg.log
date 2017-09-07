@@ -8,9 +8,13 @@ INFO: Calling <tree ./assign_workingcopies/llowenberg/rossc_a5>
 INFO: stdout: ./assign_workingcopies/llowenberg/rossc_a5
 ├── CMakeLists.txt
 ├── package.xml
-└── README.md
+├── README.md
+├── scripts
+│   ├── go.sh
+│   └── go.sh~
+└── timer.bag
 
-0 directories, 3 files
+1 directory, 6 files
 
 INFO: 
 INFO: Assignment: Design Project
@@ -19,17 +23,34 @@ INFO: Does ./assign_workingcopies/llowenberg/rossc_a5/package.xml exist? True
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a5/CMakeLists.txt exist? True
 INFO: Success: All 2 of 2 files/directories exist
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/llowenberg/rossc_a5/scripts/go.sh exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a5/scripts/go.sh exist? True
+INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/llowenberg/rossc_a5/scripts/go.sh>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/llowenberg/rossc_a5/scripts/go.sh>
+INFO: stdout: #!/bin/bash
+
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: -0.4, right: 0.4}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: -0.4, right: 0.4}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.4, right: -0.4}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.4, right: -0.4}'
+rostopic pub -r 1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/llowenberg/rossc_a5/timer.bag exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a5/timer.bag exist? True
+INFO: Success: All 1 of 1 files/directories exist
+ERROR: No official time found in timer.bag!
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 5
-	 Successes: 3
-	 Failures: 2
+WARNING: Number of tests executed: 6
+	 Successes: 5
+	 Failures: 1
 INFO: ****************END*********************
 INFO: End of testing for <a5>

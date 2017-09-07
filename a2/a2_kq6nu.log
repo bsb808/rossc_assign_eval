@@ -6,9 +6,10 @@ INFO: Does repo exists at ./assign_workingcopies/kq6nu/rossc_a2? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/kq6nu/rossc_a2>
 INFO: stdout: ./assign_workingcopies/kq6nu/rossc_a2
-└── README.md
+├── README.md
+└── usv_box.sh
 
-0 directories, 1 file
+0 directories, 2 files
 
 INFO: 
 INFO: Assignment: Create a ROS Package and Driving a USV.

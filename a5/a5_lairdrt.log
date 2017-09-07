@@ -7,9 +7,13 @@ INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/lairdrt/rossc_a5>
 INFO: stdout: ./assign_workingcopies/lairdrt/rossc_a5
 ├── CMakeLists.txt
-└── package.xml
+├── package.xml
+├── scripts
+│   ├── go.sh
+│   └── t.sh
+└── timer.bag
 
-0 directories, 2 files
+1 directory, 5 files
 
 INFO: 
 INFO: Assignment: Design Project
@@ -18,17 +22,23 @@ INFO: Does ./assign_workingcopies/lairdrt/rossc_a5/package.xml exist? True
 INFO: Does ./assign_workingcopies/lairdrt/rossc_a5/CMakeLists.txt exist? True
 INFO: Success: All 2 of 2 files/directories exist
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/lairdrt/rossc_a5/scripts/go.sh exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/lairdrt/rossc_a5/scripts/go.sh exist? True
+INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/lairdrt/rossc_a5/scripts/go.sh>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/lairdrt/rossc_a5/scripts/go.sh>
+INFO: stdout: #!/bin/bash
+rostopic pub -1 /gazebo/set_model_state gazebo_msgs/ModelState '{model_name: mobile_base, pose: { position: { x: -15, y: 15, z: 5 }, orientation: {x: 0, y: 0.0, z: 0, w: 1.0 } }, reference_frame: world }'
+rostopic pub -r 10 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+
+
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/lairdrt/rossc_a5/timer.bag exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/lairdrt/rossc_a5/timer.bag exist? True
+INFO: Success: All 1 of 1 files/directories exist
+ERROR: No official time found in timer.bag!
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 5
-	 Successes: 3
-	 Failures: 2
+WARNING: Number of tests executed: 6
+	 Successes: 5
+	 Failures: 1
 INFO: ****************END*********************
 INFO: End of testing for <a5>
