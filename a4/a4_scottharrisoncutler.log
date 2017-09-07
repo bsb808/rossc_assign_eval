@@ -6,35 +6,49 @@ INFO: Does repo exists at ./assign_workingcopies/scottharrisoncutler/rossc_a4? T
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/scottharrisoncutler/rossc_a4>
 INFO: stdout: ./assign_workingcopies/scottharrisoncutler/rossc_a4
+├── CMakeLists.txt
+├── images
+│   └── rosgraph.png
+├── launch
+│   └── course_control.launch
+├── package.xml
 └── README.md
 
-0 directories, 1 file
+2 directories, 5 files
 
 INFO: 
 INFO: Assignment: ROS plumbing - connecting nodes via topics
 INFO: Exercise: Setup Git repository and make it a ROS package
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/package.xml exist? False
-INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/CMakeLists.txt exist? False
-WARNING: Only 0 of 2 files/directories exist
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/package.xml exist? True
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/CMakeLists.txt exist? True
+INFO: Success: All 2 of 2 files/directories exist
 INFO: Exercise: Plumbing the system
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/launch/course_control.launch exist? False
-INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/images/rosgraph.png exist? False
-WARNING: Only 0 of 2 files/directories exist
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/launch/course_control.launch exist? True
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/images/rosgraph.png exist? True
+INFO: Success: All 2 of 2 files/directories exist
 INFO: Testing file <./assign_workingcopies/scottharrisoncutler/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'odometry/nav', 'nav_odom']
-ERROR: Can't open file!
+INFO: Result of search - True
 INFO: Testing file <./assign_workingcopies/scottharrisoncutler/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'cmd_course', 'cmd_vel']
-ERROR: Can't open file!
+INFO: Result of search - True
 INFO: Testing file <./assign_workingcopies/scottharrisoncutler/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'cmd_drive', 'cmd_drive']
-ERROR: Can't open file!
+INFO: Result of search - True
+INFO: Attempting to assemble a PDF from the following list of images
+INFO: ['images/rosgraph.png']
+INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a4/images/rosgraph.png exist? True
+INFO: CMD: bash add_caption.sh ./assign_workingcopies/scottharrisoncutler/rossc_a4/images/rosgraph.png ./tmp/rosgraph_rare.png "images/rosgraph.png"
+INFO: stdout: Converting ./assign_workingcopies/scottharrisoncutler/rossc_a4/images/rosgraph.png to ./tmp/rosgraph_rare.png with caption <images/rosgraph.png>
+
+INFO: CMD: convert ./tmp/rosgraph_rare.png  /home/bsb/rossc/rossc_assign_eval/a4/a4_scottharrisoncutler_images.pdf
+INFO: stdout: 
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 8
-	 Successes: 1
-	 Failures: 7
+INFO: Number of tests executed: 8
+	 Successes: 8
+	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a4>

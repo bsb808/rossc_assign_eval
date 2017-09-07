@@ -1,0 +1,37 @@
+INFO: 
+INFO: -------------START----------------------
+INFO: ----------------------------------------
+INFO: Check for directory <<bsb808>>
+INFO: Does repo exists at ./assign_workingcopies/bsb808/rossc_a5? True
+INFO: Contents of repository:
+INFO: Calling <tree ./assign_workingcopies/bsb808/rossc_a5>
+INFO: stdout: ./assign_workingcopies/bsb808/rossc_a5
+├── README.md
+└── timer.bag
+
+0 directories, 2 files
+
+INFO: 
+INFO: Assignment: Design Project
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/bsb808/rossc_a5/package.xml exist? False
+INFO: Does ./assign_workingcopies/bsb808/rossc_a5/CMakeLists.txt exist? False
+WARNING: Only 0 of 2 files/directories exist
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/bsb808/rossc_a5/scripts/go.sh exist? False
+WARNING: Only 0 of 1 files/directories exist
+INFO: Contents of <./assign_workingcopies/bsb808/rossc_a5/scripts/go.sh>
+ERROR: File does not exist!
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/bsb808/rossc_a5/timer.bag exist? True
+INFO: Success: All 1 of 1 files/directories exist
+INFO: Sucessfully found speed test times in timer.bag
+INFO: 	Recorded Times: [17.2609920502]
+INFO: 	Best time = 17.261 s
+INFO: 
+INFO: -- SUMMARY --
+WARNING: Number of tests executed: 6
+	 Successes: 3
+	 Failures: 3
+INFO: ****************END*********************
+INFO: End of testing for <a5>

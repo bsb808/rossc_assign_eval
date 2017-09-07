@@ -31,6 +31,14 @@ ERROR: Can't open file!
 INFO: Testing file <./assign_workingcopies/jdhernandez88/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'cmd_drive', 'cmd_drive']
 ERROR: Can't open file!
+INFO: Attempting to assemble a PDF from the following list of images
+INFO: ['images/rosgraph.png']
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a4/images/rosgraph.png exist? False
+INFO: CMD: bash add_caption.sh missing.png ./tmp/rosgraph_rare.png "images/rosgraph.png"
+INFO: stdout: Converting missing.png to ./tmp/rosgraph_rare.png with caption <images/rosgraph.png>
+
+INFO: CMD: convert ./tmp/rosgraph_rare.png  /home/bsb/rossc/rossc_assign_eval/a4/a4_jdhernandez88_images.pdf
+INFO: stdout: 
 INFO: 
 INFO: -- SUMMARY --
 WARNING: Number of tests executed: 8
