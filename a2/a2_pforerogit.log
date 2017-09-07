@@ -8,9 +8,10 @@ INFO: Calling <tree ./assign_workingcopies/pforerogit/rossc_a2>
 INFO: stdout: ./assign_workingcopies/pforerogit/rossc_a2
 ├── CMakeLists.txt
 ├── package.xml
-└── README.md
+├── README.md
+└── usv_box.sh
 
-0 directories, 3 files
+0 directories, 4 files
 
 INFO: 
 INFO: Assignment: Create a ROS Package and Driving a USV.

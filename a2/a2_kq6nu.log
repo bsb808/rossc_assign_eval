@@ -6,8 +6,8 @@ INFO: Does repo exists at ./assign_workingcopies/kq6nu/rossc_a2? False
 INFO: Terminating testing - can't test without the repository
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 2
-	 Successes: 1
+WARNING: Number of tests executed: 1
+	 Successes: 0
 	 Failures: 1
 INFO: ****************END*********************
 INFO: End of testing for <a2>
