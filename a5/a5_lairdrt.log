@@ -35,8 +35,8 @@ INFO: Checking existence of files/directories...
 INFO: Does ./assign_workingcopies/lairdrt/rossc_a5/timer.bag exist? True
 INFO: Success: All 1 of 1 files/directories exist
 INFO: Sucessfully found speed test times in timer.bag
-INFO: 	Recorded Times: [6.85493659973]
-INFO: 	Best time = 6.855 s
+INFO: 	Recorded Times: [6.79322814941]
+INFO: 	Best time = 6.793 s
 INFO: 
 INFO: -- SUMMARY --
 INFO: Number of tests executed: 6
