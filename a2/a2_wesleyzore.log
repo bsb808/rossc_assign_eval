@@ -8,9 +8,11 @@ INFO: Calling <tree ./assign_workingcopies/wesleyzore/rossc_a2>
 INFO: stdout: ./assign_workingcopies/wesleyzore/rossc_a2
 ├── CMakeLists.txt
 ├── package.xml
-└── README.md
+├── README.md
+└── scripts
+    └── usv_box.sh
 
-0 directories, 3 files
+1 directory, 4 files
 
 INFO: 
 INFO: Assignment: Create a ROS Package and Driving a USV.
@@ -22,14 +24,25 @@ INFO: Success: All 2 of 2 files/directories exist
 INFO: 
 INFO: Exercise: Gazebo USV Driving a Box
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/wesleyzore/rossc_a2/scripts/usv_box.sh exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/wesleyzore/rossc_a2/scripts/usv_box.sh exist? True
+INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/wesleyzore/rossc_a2/scripts/usv_box.sh>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/wesleyzore/rossc_a2/scripts/usv_box.sh>
+INFO: stdout: #!/bin/bash
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 2.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 2.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 2.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+
+
+
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 4
-	 Successes: 3
-	 Failures: 1
+INFO: Number of tests executed: 4
+	 Successes: 4
+	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a2>
