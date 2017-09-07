@@ -6,28 +6,59 @@ INFO: Does repo exists at ./assign_workingcopies/lairdrt/rossc_a2? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/lairdrt/rossc_a2>
 INFO: stdout: ./assign_workingcopies/lairdrt/rossc_a2
-└── README.md
+├── CMakeLists.txt
+├── package.xml
+├── README.md
+└── scripts
+    └── usv_box.sh
 
-0 directories, 1 file
+1 directory, 4 files
 
 INFO: 
 INFO: Assignment: Create a ROS Package and Driving a USV.
 INFO: Exercise: Setup Git repository and make it a ROS package
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/lairdrt/rossc_a2/CMakeLists.txt exist? False
-INFO: Does ./assign_workingcopies/lairdrt/rossc_a2/package.xml exist? False
-WARNING: Only 0 of 2 files/directories exist
+INFO: Does ./assign_workingcopies/lairdrt/rossc_a2/CMakeLists.txt exist? True
+INFO: Does ./assign_workingcopies/lairdrt/rossc_a2/package.xml exist? True
+INFO: Success: All 2 of 2 files/directories exist
 INFO: 
 INFO: Exercise: Gazebo USV Driving a Box
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/lairdrt/rossc_a2/scripts/usv_box.sh exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/lairdrt/rossc_a2/scripts/usv_box.sh exist? True
+INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/lairdrt/rossc_a2/scripts/usv_box.sh>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/lairdrt/rossc_a2/scripts/usv_box.sh>
+INFO: stdout: #!/bin/bash
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.25, right: 0.25}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 0.0}'
+
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: -0.39, right: 0.39}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 0.0}'
+
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.25, right: 0.25}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 0.0}'
+
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: -0.39, right: 0.39}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 0.0}'
+
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.25, right: 0.25}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 0.0}'
+
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: -0.39, right: 0.39}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 0.0}'
+
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.25, right: 0.25}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive  '{left: 0.0, right: 0.0}'
+
+
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 4
-	 Successes: 1
-	 Failures: 3
+INFO: Number of tests executed: 4
+	 Successes: 4
+	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a2>
