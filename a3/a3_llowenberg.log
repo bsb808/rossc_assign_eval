@@ -8,44 +8,46 @@ INFO: Calling <tree ./assign_workingcopies/llowenberg/rossc_a3>
 INFO: stdout: ./assign_workingcopies/llowenberg/rossc_a3
 ├── images
 │   ├── cmd_drive.png
-│   └── position.png
+│   ├── euler.png
+│   ├── position.png
+│   └── quaternion.png
 └── README.md
 
-1 directory, 3 files
+1 directory, 5 files
 
 INFO: 
 INFO: Assignment: Viewing and Logging Sensor Data
 INFO: Exercise: Post-Process Sensor Data
 INFO: Checking existence of files/directories...
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/cmd_drive.png exist? True
-INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/euler.png exist? False
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/euler.png exist? True
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/position.png exist? True
-INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/quaternion.png exist? False
-WARNING: Only 2 of 4 files/directories exist
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/quaternion.png exist? True
+INFO: Success: All 4 of 4 files/directories exist
 INFO: Attempting to assemble a PDF from the following list of images
 INFO: ['images/cmd_drive.png', 'images/euler.png', 'images/position.png', 'images/quaternion.png']
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/cmd_drive.png exist? True
 INFO: CMD: bash add_caption.sh ./assign_workingcopies/llowenberg/rossc_a3/images/cmd_drive.png ./tmp/cmd_drive_rare.png "images/cmd_drive.png"
 INFO: stdout: Converting ./assign_workingcopies/llowenberg/rossc_a3/images/cmd_drive.png to ./tmp/cmd_drive_rare.png with caption <images/cmd_drive.png>
 
-INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/euler.png exist? False
-INFO: CMD: bash add_caption.sh missing.png ./tmp/euler_rare.png "images/euler.png"
-INFO: stdout: Converting missing.png to ./tmp/euler_rare.png with caption <images/euler.png>
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/euler.png exist? True
+INFO: CMD: bash add_caption.sh ./assign_workingcopies/llowenberg/rossc_a3/images/euler.png ./tmp/euler_rare.png "images/euler.png"
+INFO: stdout: Converting ./assign_workingcopies/llowenberg/rossc_a3/images/euler.png to ./tmp/euler_rare.png with caption <images/euler.png>
 
 INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/position.png exist? True
 INFO: CMD: bash add_caption.sh ./assign_workingcopies/llowenberg/rossc_a3/images/position.png ./tmp/position_rare.png "images/position.png"
 INFO: stdout: Converting ./assign_workingcopies/llowenberg/rossc_a3/images/position.png to ./tmp/position_rare.png with caption <images/position.png>
 
-INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/quaternion.png exist? False
-INFO: CMD: bash add_caption.sh missing.png ./tmp/quaternion_rare.png "images/quaternion.png"
-INFO: stdout: Converting missing.png to ./tmp/quaternion_rare.png with caption <images/quaternion.png>
+INFO: Does ./assign_workingcopies/llowenberg/rossc_a3/images/quaternion.png exist? True
+INFO: CMD: bash add_caption.sh ./assign_workingcopies/llowenberg/rossc_a3/images/quaternion.png ./tmp/quaternion_rare.png "images/quaternion.png"
+INFO: stdout: Converting ./assign_workingcopies/llowenberg/rossc_a3/images/quaternion.png to ./tmp/quaternion_rare.png with caption <images/quaternion.png>
 
 INFO: CMD: convert ./tmp/cmd_drive_rare.png ./tmp/euler_rare.png ./tmp/position_rare.png ./tmp/quaternion_rare.png  /home/bsb/rossc/rossc_assign_eval/a3/a3_llowenberg_images.pdf
 INFO: stdout: 
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 5
-	 Successes: 3
-	 Failures: 2
+INFO: Number of tests executed: 5
+	 Successes: 5
+	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a3>
