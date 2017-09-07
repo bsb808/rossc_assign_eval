@@ -73,8 +73,6 @@ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[4.5, 0.0, 0.0]' '[0.0,
 rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[0, 0, 0]' '[0, 0, -1.5]'
 rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[4.0, 0.0, 0.0]' '[0.0, 0.0, -3.12]'
 
-INFO: Attempting to run bash script <scripts/turtleletter.sh>
-INFO: Saving resulting image as </home/bsb/rossc/rossc_assign_eval/a1/turtleletter_pforerogit.png>
 INFO: 
 INFO: -- SUMMARY --
 INFO: Number of tests executed: 13
