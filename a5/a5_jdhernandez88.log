@@ -6,9 +6,13 @@ INFO: Does repo exists at ./assign_workingcopies/jdhernandez88/rossc_a5? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/jdhernandez88/rossc_a5>
 INFO: stdout: ./assign_workingcopies/jdhernandez88/rossc_a5
-└── README.md
+├── README.md
+├── scripts
+│   ├── go.sh
+│   └── go.sh~
+└── timer.bag
 
-0 directories, 1 file
+1 directory, 4 files
 
 INFO: 
 INFO: Assignment: Design Project
@@ -17,17 +21,48 @@ INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a5/package.xml exist? Fals
 INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a5/CMakeLists.txt exist? False
 WARNING: Only 0 of 2 files/directories exist
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a5/scripts/go.sh exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a5/scripts/go.sh exist? True
+INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/jdhernandez88/rossc_a5/scripts/go.sh>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/jdhernandez88/rossc_a5/scripts/go.sh>
+INFO: stdout: #!/bin/bash
+
+rosservice call /gazebo/reset_world
+
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: -0.3, right: 1.0}'
+
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 0.8}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 5.0, right: 5.0}'
+rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: -0.1}'
+
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: -0.24}'
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 0.6}'
+rostopic pub -r 20 /cmd_drive kingfisher_msgs/Drive  '{left: 50.0, right: 50.0}'
+
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 10.0, right: 10.0}'
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 50.0, right: 50.0}'
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 50.0, right: 50.0}'
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 50.0, right: 50.0}'
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 50.0, right: 50.0}'
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: 50.0, right: 50.0}'
+#rostopic pub -1 /cmd_drive kingfisher_msgs/Drive  '{left: -5.0, right: 5.0}'
+
+
+
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a5/timer.bag exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/jdhernandez88/rossc_a5/timer.bag exist? True
+INFO: Success: All 1 of 1 files/directories exist
+INFO: Sucessfully found speed test times in timer.bag
+INFO: 	Recorded Times: [7.25587463379]
+INFO: 	Best time = 7.256 s
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 5
-	 Successes: 1
-	 Failures: 4
+WARNING: Number of tests executed: 6
+	 Successes: 4
+	 Failures: 2
 INFO: ****************END*********************
 INFO: End of testing for <a5>
