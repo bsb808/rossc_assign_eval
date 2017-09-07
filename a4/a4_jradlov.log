@@ -6,9 +6,11 @@ INFO: Does repo exists at ./assign_workingcopies/jradlov/rossc_a4? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/jradlov/rossc_a4>
 INFO: stdout: ./assign_workingcopies/jradlov/rossc_a4
+├── launch
+│   └── course_control.launch
 └── README.md
 
-0 directories, 1 file
+1 directory, 2 files
 
 INFO: 
 INFO: Assignment: ROS plumbing - connecting nodes via topics
@@ -19,18 +21,18 @@ INFO: Does ./assign_workingcopies/jradlov/rossc_a4/CMakeLists.txt exist? False
 WARNING: Only 0 of 2 files/directories exist
 INFO: Exercise: Plumbing the system
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/jradlov/rossc_a4/launch/course_control.launch exist? False
+INFO: Does ./assign_workingcopies/jradlov/rossc_a4/launch/course_control.launch exist? True
 INFO: Does ./assign_workingcopies/jradlov/rossc_a4/images/rosgraph.png exist? False
-WARNING: Only 0 of 2 files/directories exist
+WARNING: Only 1 of 2 files/directories exist
 INFO: Testing file <./assign_workingcopies/jradlov/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'odometry/nav', 'nav_odom']
-ERROR: Can't open file!
+INFO: Result of search - False
 INFO: Testing file <./assign_workingcopies/jradlov/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'cmd_course', 'cmd_vel']
-ERROR: Can't open file!
+INFO: Result of search - True
 INFO: Testing file <./assign_workingcopies/jradlov/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
 INFO: 	['remap', 'cmd_drive', 'cmd_drive']
-ERROR: Can't open file!
+INFO: Result of search - True
 INFO: Attempting to assemble a PDF from the following list of images
 INFO: ['images/rosgraph.png']
 INFO: Does ./assign_workingcopies/jradlov/rossc_a4/images/rosgraph.png exist? False
@@ -42,7 +44,7 @@ INFO: stdout:
 INFO: 
 INFO: -- SUMMARY --
 WARNING: Number of tests executed: 8
-	 Successes: 1
-	 Failures: 7
+	 Successes: 4
+	 Failures: 4
 INFO: ****************END*********************
 INFO: End of testing for <a4>
