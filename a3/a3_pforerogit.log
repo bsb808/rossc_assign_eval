@@ -6,9 +6,13 @@ INFO: Does repo exists at ./assign_workingcopies/pforerogit/rossc_a3? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/pforerogit/rossc_a3>
 INFO: stdout: ./assign_workingcopies/pforerogit/rossc_a3
+├── cmd_drive.png
+├── euler.png
+├── position.png
+├── quaternion.png
 └── README.md
 
-0 directories, 1 file
+0 directories, 5 files
 
 INFO: 
 INFO: Assignment: Viewing and Logging Sensor Data
