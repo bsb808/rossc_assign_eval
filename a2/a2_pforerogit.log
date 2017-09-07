@@ -9,9 +9,10 @@ INFO: stdout: ./assign_workingcopies/pforerogit/rossc_a2
 ├── CMakeLists.txt
 ├── package.xml
 ├── README.md
-└── usv_box.sh
+└── scripts
+    └── usv_box.sh
 
-0 directories, 4 files
+1 directory, 4 files
 
 INFO: 
 INFO: Assignment: Create a ROS Package and Driving a USV.
@@ -23,14 +24,30 @@ INFO: Success: All 2 of 2 files/directories exist
 INFO: 
 INFO: Exercise: Gazebo USV Driving a Box
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/pforerogit/rossc_a2/scripts/usv_box.sh exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/pforerogit/rossc_a2/scripts/usv_box.sh exist? True
+INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/pforerogit/rossc_a2/scripts/usv_box.sh>
-ERROR: File does not exist!
+INFO: Calling <cat ./assign_workingcopies/pforerogit/rossc_a2/scripts/usv_box.sh>
+INFO: stdout: #!/bin/bash
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 1.0, right: 1.0}'
+#rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 0.2, right: 0.2}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 0.0, right: 0.6}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 0.8, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 0.1, right: 0.3}'
+#at approx x=5 y=5
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 0.1, right: 0.80}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 0.7, right: 0.7}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 0.7, right: 0.7}'
+# at approx x=0 y=5
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: -0.40, right: 0.40}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 1.0, right: 1.0}'
+rostopic pub -1 \cmd_drive kingfisher_msgs/Drive '{left: 0.1, right: 0.1}'
+
+
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 4
-	 Successes: 3
-	 Failures: 1
+INFO: Number of tests executed: 4
+	 Successes: 4
+	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a2>
