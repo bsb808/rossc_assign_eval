@@ -64,11 +64,13 @@ rostopic pub -r 10 \cmd_drive kingfisher_msgs/Drive  '{left: 1, right: 1}'
 INFO: Checking existence of files/directories...
 INFO: Does ./assign_workingcopies/scottharrisoncutler/rossc_a5/timer.bag exist? True
 INFO: Success: All 1 of 1 files/directories exist
-ERROR: No official time found in timer.bag!
+INFO: Sucessfully found speed test times in timer.bag
+INFO: 	Recorded Times: [6.22368431091]
+INFO: 	Best time = 6.224 s
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 6
-	 Successes: 5
-	 Failures: 1
+INFO: Number of tests executed: 6
+	 Successes: 6
+	 Failures: 0
 INFO: ****************END*********************
 INFO: End of testing for <a5>

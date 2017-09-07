@@ -27,16 +27,16 @@ INFO: Success: All 1 of 1 files/directories exist
 INFO: Contents of <./assign_workingcopies/lairdrt/rossc_a5/scripts/go.sh>
 INFO: Calling <cat ./assign_workingcopies/lairdrt/rossc_a5/scripts/go.sh>
 INFO: stdout: #!/bin/bash
-rostopic pub -1 /gazebo/set_model_state gazebo_msgs/ModelState '{model_name: mobile_base, pose: { position: { x: -20, y: 15, z: 5 }, orientation: {x: 0, y: 0.0, z: 0, w: 1.0 } }, reference_frame: world }'
-rostopic pub -r 50 \cmd_drive kingfisher_msgs/Drive  '{left: 1.0, right: 1.0}'
+rostopic pub -1 /gazebo/set_model_state gazebo_msgs/ModelState '{model_name: mobile_base, pose: { position: { x: -25, y: 15, z: 5 }, orientation: {x: 0, y: 0.0, z: 0, w: 1.0 } }, reference_frame: world }'
+rostopic pub -r 50 \cmd_drive kingfisher_msgs/Drive  '{left: 1.5, right: 1.5}'
 
 
 INFO: Checking existence of files/directories...
 INFO: Does ./assign_workingcopies/lairdrt/rossc_a5/timer.bag exist? True
 INFO: Success: All 1 of 1 files/directories exist
 INFO: Sucessfully found speed test times in timer.bag
-INFO: 	Recorded Times: [7.09805679321]
-INFO: 	Best time = 7.098 s
+INFO: 	Recorded Times: [6.85493659973]
+INFO: 	Best time = 6.855 s
 INFO: 
 INFO: -- SUMMARY --
 INFO: Number of tests executed: 6
