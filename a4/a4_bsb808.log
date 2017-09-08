@@ -41,3 +41,14 @@ INFO: Attempting to assemble a PDF from the following list of images
 INFO: ['images/rosgraph.png']
 INFO: Does ./assign_workingcopies/bsb808/rossc_a4/images/rosgraph.png exist? True
 INFO: CMD: bash add_caption.sh ./assign_workingcopies/bsb808/rossc_a4/images/rosgraph.png ./tmp/rosgraph_rare.png "images/rosgraph.png"
+INFO: stdout: Converting ./assign_workingcopies/bsb808/rossc_a4/images/rosgraph.png to ./tmp/rosgraph_rare.png with caption <images/rosgraph.png>
+
+INFO: CMD: convert ./tmp/rosgraph_rare.png  /home/bsb/rossc/rossc_assign_eval/a4/a4_bsb808_images.pdf
+INFO: stdout: 
+INFO: 
+INFO: -- SUMMARY --
+INFO: Number of tests executed: 8
+	 Successes: 8
+	 Failures: 0
+INFO: ****************END*********************
+INFO: End of testing for <a4>
