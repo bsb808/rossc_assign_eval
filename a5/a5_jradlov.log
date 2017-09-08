@@ -7,10 +7,11 @@ INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/jradlov/rossc_a5>
 INFO: stdout: ./assign_workingcopies/jradlov/rossc_a5
 ├── README.md
-└── scripts
-    └── go.sh
+├── scripts
+│   └── go.sh
+└── timer.bag
 
-1 directory, 2 files
+1 directory, 3 files
 
 INFO: 
 INFO: Assignment: Design Project
@@ -59,12 +60,15 @@ rostopic pub \cmd_drive kingfisher_msgs/Drive -r 10 '{left: 1.0, right: 1.0}'
 
 
 INFO: Checking existence of files/directories...
-INFO: Does ./assign_workingcopies/jradlov/rossc_a5/timer.bag exist? False
-WARNING: Only 0 of 1 files/directories exist
+INFO: Does ./assign_workingcopies/jradlov/rossc_a5/timer.bag exist? True
+INFO: Success: All 1 of 1 files/directories exist
+INFO: Sucessfully found speed test times in timer.bag
+INFO: 	Recorded Times: [7.89204692841]
+INFO: 	Best time = 7.892 s
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 5
-	 Successes: 2
-	 Failures: 3
+WARNING: Number of tests executed: 6
+	 Successes: 4
+	 Failures: 2
 INFO: ****************END*********************
 INFO: End of testing for <a5>
