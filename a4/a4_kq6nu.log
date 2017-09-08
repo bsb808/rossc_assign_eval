@@ -2,12 +2,47 @@ INFO:
 INFO: -------------START----------------------
 INFO: ----------------------------------------
 INFO: Check for directory <<kq6nu>>
-INFO: Does repo exists at ./assign_workingcopies/kq6nu/rossc_a4? False
-INFO: Terminating testing - can't test without the repository
+INFO: Does repo exists at ./assign_workingcopies/kq6nu/rossc_a4? True
+INFO: Contents of repository:
+INFO: Calling <tree ./assign_workingcopies/kq6nu/rossc_a4>
+INFO: stdout: ./assign_workingcopies/kq6nu/rossc_a4
+└── README.md
+
+0 directories, 1 file
+
+INFO: 
+INFO: Assignment: ROS plumbing - connecting nodes via topics
+INFO: Exercise: Setup Git repository and make it a ROS package
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/kq6nu/rossc_a4/package.xml exist? False
+INFO: Does ./assign_workingcopies/kq6nu/rossc_a4/CMakeLists.txt exist? False
+WARNING: Only 0 of 2 files/directories exist
+INFO: Exercise: Plumbing the system
+INFO: Checking existence of files/directories...
+INFO: Does ./assign_workingcopies/kq6nu/rossc_a4/launch/course_control.launch exist? False
+INFO: Does ./assign_workingcopies/kq6nu/rossc_a4/images/rosgraph.png exist? False
+WARNING: Only 0 of 2 files/directories exist
+INFO: Testing file <./assign_workingcopies/kq6nu/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
+INFO: 	['remap', 'odometry/nav', 'nav_odom']
+ERROR: Can't open file!
+INFO: Testing file <./assign_workingcopies/kq6nu/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
+INFO: 	['remap', 'cmd_course', 'cmd_vel']
+ERROR: Can't open file!
+INFO: Testing file <./assign_workingcopies/kq6nu/rossc_a4/launch/course_control.launch> for the occurance of all of the following strings on a single line:
+INFO: 	['remap', 'cmd_drive', 'cmd_drive']
+ERROR: Can't open file!
+INFO: Attempting to assemble a PDF from the following list of images
+INFO: ['images/rosgraph.png']
+INFO: Does ./assign_workingcopies/kq6nu/rossc_a4/images/rosgraph.png exist? False
+INFO: CMD: bash add_caption.sh missing.png ./tmp/rosgraph_rare.png "images/rosgraph.png"
+INFO: stdout: Converting missing.png to ./tmp/rosgraph_rare.png with caption <images/rosgraph.png>
+
+INFO: CMD: convert ./tmp/rosgraph_rare.png  /home/bsb/rossc/rossc_assign_eval/a4/a4_kq6nu_images.pdf
+INFO: stdout: 
 INFO: 
 INFO: -- SUMMARY --
-WARNING: Number of tests executed: 1
-	 Successes: 0
-	 Failures: 1
+WARNING: Number of tests executed: 8
+	 Successes: 1
+	 Failures: 7
 INFO: ****************END*********************
 INFO: End of testing for <a4>
