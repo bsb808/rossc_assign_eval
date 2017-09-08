@@ -9,11 +9,13 @@ INFO: stdout: ./assign_workingcopies/kq6nu/rossc_a4
 ├── README.md
 └── rossc_a4
     ├── CMakeLists.txt
+    ├── images
+    │   └── rosgraph.png
     ├── launch
     │   └── course_control.launch
     └── package.xml
 
-2 directories, 4 files
+3 directories, 5 files
 
 INFO: 
 INFO: Assignment: ROS plumbing - connecting nodes via topics
