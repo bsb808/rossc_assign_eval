@@ -25,13 +25,3 @@ ERROR: File does not exist!
 INFO: Checking existence of files/directories...
 INFO: Does ./assign_workingcopies/bsb808/rossc_a5/timer.bag exist? True
 INFO: Success: All 1 of 1 files/directories exist
-INFO: Sucessfully found speed test times in timer.bag
-INFO: 	Recorded Times: [17.2609920502]
-INFO: 	Best time = 17.261 s
-INFO: 
-INFO: -- SUMMARY --
-WARNING: Number of tests executed: 6
-	 Successes: 3
-	 Failures: 3
-INFO: ****************END*********************
-INFO: End of testing for <a5>
