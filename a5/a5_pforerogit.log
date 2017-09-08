@@ -7,10 +7,12 @@ INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/pforerogit/rossc_a5>
 INFO: stdout: ./assign_workingcopies/pforerogit/rossc_a5
 ├── CMakeLists.txt
+├── nodes
+│   └── drive_usv.py
 ├── package.xml
 └── README.md
 
-0 directories, 3 files
+1 directory, 4 files
 
 INFO: 
 INFO: Assignment: Design Project
