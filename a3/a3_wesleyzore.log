@@ -6,12 +6,8 @@ INFO: Does repo exists at ./assign_workingcopies/wesleyzore/rossc_a3? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/wesleyzore/rossc_a3>
 INFO: stdout: ./assign_workingcopies/wesleyzore/rossc_a3
-├── cmd_drive.png
-├── euler.png
-├── position.png
-└── quaternion.png
 
-0 directories, 4 files
+0 directories, 0 files
 
 INFO: 
 INFO: Assignment: Viewing and Logging Sensor Data
