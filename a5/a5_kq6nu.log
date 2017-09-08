@@ -6,8 +6,9 @@ INFO: Does repo exists at ./assign_workingcopies/kq6nu/rossc_a5? True
 INFO: Contents of repository:
 INFO: Calling <tree ./assign_workingcopies/kq6nu/rossc_a5>
 INFO: stdout: ./assign_workingcopies/kq6nu/rossc_a5
+└── README.md
 
-0 directories, 0 files
+0 directories, 1 file
 
 INFO: 
 INFO: Assignment: Design Project
